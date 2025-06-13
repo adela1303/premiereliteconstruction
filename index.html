@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Premier Elite Construction – Portofoliu CNC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {margin:0;font-family:Arial,sans-serif;color:#333;}
+    nav {position:fixed;top:0;width:100%;background:white;box-shadow:0 2px 5px rgba(0,0,0,0.1);z-index:1000;}
+    nav ul {list-style:none;display:flex;justify-content:center;padding:10px;margin:0;}
+    nav li {margin:0 15px;}
+    nav a {text-decoration:none;color:#333;font-weight:bold;}
+    header {height:60vh;background:url('banner.jpg') center/cover;display:flex;align-items:center;justify-content:center;color:white;text-shadow:0 2px 5px rgba(0,0,0,0.7);}
+    header h1 {font-size:3em;margin:0;}
+    header a {display:inline-block;margin-top:20px;padding:10px 20px;background:#007BFF;color:white;border-radius:5px;text-decoration:none;}
+    .projects {padding:60px 20px;max-width:1200px;margin:auto;}
+    .grid {display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;}
+    .grid img {width:100%;height:auto;border-radius:5px;}
+    .contact {background:#f9f9f9;padding:40px 20px;text-align:center;}
+    .contact form {max-width:400px;margin:auto;display:flex;flex-direction:column;}
+    .contact input, .contact textarea {margin-bottom:15px;padding:10px;font-size:1em;}
+    .contact button {padding:10px;background:#28a745;color:white;border:none;font-size:1.1em;}
+    footer {text-align:center;padding:20px;background:#222;color:white;}
+    footer p {margin:5px;}
+    .hp-field {display:none !important;}
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#projects">Proiecte</a></li>
+    <li><a href="#about">Despre noi</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div>
+    <h1>Premier Elite Construction</h1>
+    <p>Portofoliu CNC – Garduri &amp; Pavaje</p>
+    <a href="#projects" style="padding:10px 20px;background:#007BFF;color:white;border-radius:5px;text-decoration:none;">Vezi proiecte</a>
+  </div>
+</header>
+
+<section id="projects" class="projects">
+  <h2>Proiecte recente</h2>
+  <div class="grid">
+    <img src="gard1.jpg" alt="Gard realizat CNC">
+    <img src="panel1.jpg" alt="Panou decorativ CNC">
+    <img src="gard2.jpg" alt="Gard artistic CNC">
+    <img src="pavaj1.jpg" alt="Pavaj personalizat CNC">
+  </div>
+</section>
+
+<section id="about" class="projects">
+  <h2>Despre noi</h2>
+  <p>Premier Elite Construction este specializată în producție CNC: garduri decorative, pavaje personalizate și panouri din beton/beton armat. Folosim materiale premium și tehnologii precise, garantând calitate și durabilitate.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contactează-ne pentru o ofertă</h2>
+  <form action="https://formsubmit.co/cristischeau@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Nume" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Detalii proiect" required></textarea>
+
+    <!-- Honeypot anti-spam -->
+    <input type="text" name="_honey" class="hp-field" tabindex="-1" autocomplete="off">
+
+    <!-- Personalizare redirect, subiect și anti-spam -->
+    <input type="hidden" name="_next" value="https://premiereliteconstruction.ro/thank-you.html">
+    <input type="hidden" name="_subject" value="Mesaj nou de pe site – Premier Elite">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Trimite</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Premier Elite Construction</p>
+  <p>Tel: <strong>0744 548 764</strong> • Email: contact@premiereliteconstruction.ro</p>
+</footer>
+
+</body>
+</html>
+
